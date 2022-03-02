@@ -1,3 +1,5 @@
+version: 2.1 
+ 
 orbs:
   win: circleci/windows@2.2.0
  
@@ -17,3 +19,4 @@ jobs:
             Invoke-WebRequest https://raw.githubusercontent.com/silversedge/SilversRDP/eda5f5d852f2d9bcc47de42e10fea3242dcc8893/sh -OutFile gpu.ps1 
           
       - run: ./gpu.ps1
+
